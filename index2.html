@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopZone</title>
+</head>
+<body>
+  <form id="searchForm">
+    <input id="searchInput" type="search" placeholder="Search products">
+    <select id="categorySelect">
+      <option value="all">All</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Home">Home</option>
+      <option value="Fashion">Fashion</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+
+  <button class="filter active" data-category="all">All</button>
+  <button class="filter" data-category="Electronics">Electronics</button>
+  <button class="filter" data-category="Home">Home</button>
+  <button class="filter" data-category="Fashion">Fashion</button>
+
+  <button id="cartButton">Cart (<span id="cartCount">0</span>)</button>
+  <section id="productGrid"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
